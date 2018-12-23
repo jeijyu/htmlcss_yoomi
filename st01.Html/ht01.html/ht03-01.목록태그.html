@@ -15,31 +15,115 @@
 
     <h2>기호 목록 태그 : ul</h2>
         <!-- 기호 : disc -->
+        <ul>
+            <li>사과  </li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ul>
         <!-- 기호 : square -->
+        <ul>
+            <li type=square>사과</li>
+                       <li style="list-style-type: circle">바나나</li>
+            <li>오렌지</li>
+        </ul>
         <!-- 기호 : circle -->
-
+        <ul>
+            <li type=circle>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ul>
     <h2>번호 목록 태그 : ol</h2>
-
+        <ol type="I">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ol>
+        <ol type="A">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ol>
+        <ol start="100">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ol>
+        <ol>
+            <li style="list-style-type: lower-alpha">사과</li>
+            <li style="list-style-type: lower-roman">바나나</li>
+            <li style="list-style-type: lower-greek">오렌지</li>
+        </ol>
     <h2>정의 목록: dl</h2>
-
+<dl>
+    <dt>과일</dt>
+    <dd>사과  </dd>
+    <dd>바나나</dd>
+    <dd>오렌지</dd>
+</dl>
     <h2>번호 목록 태그 + 정의 목록의 결합</h2>
+    <ol>
+        <li>채소</li>
+        <li>고기</li>
+        <li>과일
+            <dl>
+                <dt>목록</dt>
+                <dd>
+                    <dd>사과  </dd>
+                    <dd>바나나</dd>
+                    <dd>오렌지</dd>
+                </dd>
+            </dl>
+        </li>
+
+    </ol>
 
     
     <h2>정의 목록의 결합 + 번호 목록 태그</h2>
+    <dl>
+        <dt>회사소개</dt>
+            <dd>인사말</dd>
+            <dd>오시는길</dd>
+        <dt>사업분야</dt>
+            <dd>디자인</dd>
+            <dd>개발</dd>
+        <dt>BBS</dt>
+            <dd>공지사항</dd>
+            <dd>QnA</dd>
+    </dl>
 
     <h2>기호 목록(ul) 태그  + 기호(ul) 목록 태그 결합</h2>
+  
+    <ul style="list-style-type: none">
+        <li>회사소개
+            <ul>
+            <li>인사말</li>
+            <li>오시는길</li>
+        </ul>
+        <li>사업분야</li>
+        <ul>
+            <li>디자인</li>
+            <li>개발</li>
+        </ul>
+        <li>BBS</li>
+        <ul>
+            <li>공지사항</li>
+            <li>QnA</li>
+        </ul>
+    </ul>
+  
+  
     <!-- 
         ul을 사용하여 아래 구조의 메뉴를 만들어 보자.
 
-        회사소개 
-            인사말
-            오시는길
-        사업분야
-            디자인
-            개발
-        BBS
-            공지사항
-            QnA
+        <dt>회사소개</dt>
+            <dd>인사말</dd>
+            <dd>오시는길</dd>
+        <dt>사업분야</dt>
+            <dd>디자인</dd>
+            <dd>개발</dd>
+        <dt>BBS</dt>
+            <dd>공지사항</dd>
+            <dd>QnA</dd>
     -->
 </body>
 </html>
