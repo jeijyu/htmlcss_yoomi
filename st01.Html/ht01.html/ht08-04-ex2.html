@@ -1,21 +1,109 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
+    <style>
+        label {
+            width: 120px;
+            display: inline-block
+        }
     </style>
 </head>
+
 <body>
-    <h1>��ǰ �ֹ���</h1>
 
-        <!-- ���� ���� -->
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                <b>개인 정보</b>
+            </legend>
+            <p>
+                <ul>
+                    <li type="none">
+                        <div>
+                            <label for="name1">
+                                <b>이름</b>
+                            </label>
+                            <input type="text" name="name1" id="name1" placeholder="여백없이 입력">
+                        </div>
+                        <div>
+                            <label for="num1">
+                                <b>연락처</b>
+                            </label>
+                            <input type="text" name="num1" id="num1" placeholder="연락가능한 번호">
+                        </div>
+                    </li>
+                </ul>
+            </p>
+        </fieldset>
 
-        <!-- ����� ���� -->
+        <fieldset>
+            <legend>
+                <b>배송지 정보</b>
+            </legend>
+            <p>
+                <ul>
+                    <li type="none">
+                        <div>
+                            <label for="ad1">
+                                <b>주소</b>
+                            </label>
+                            <input type="text" name="ad1" id="ad1" style="width: 300px;" required>
+                        </div>
+                        <div>
+                            <label for="num2">
+                                <b>전화번호</b>
+                            </label>
+                            <input type="text" name="num2" id="num2" required>
+                        </div>
+                        <div>
+                            <label for="memo" style="vertical-align:top;">
+                            
+                                <b> 메 모</b>
+                            </label>
+                            <textarea name="memo" id="memo" cols="30" rows="7"></textarea>
+                    </li>
+                </ul>
+            </p>
+            </div>
 
-        <!-- �ֹ� ���� -->
+        </fieldset>
 
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
+        <fieldset>
+            <legend>
+                <b>주문 정보</b>
+            </legend>
+            <p>
+                <ul>
+                    <li type="none">
+                        <div>
+                            <label for="c1" style="width: 230px;">
+                                <input type="checkbox" name="checkbox" id="c1" checked> 과테말라 안티구아 (100g)</label>
+                            <input type="number" name="numa" id="numa" value="0" style="width: 50px;">개
+                        </div>
+                        <div>
+                            <label for="c2" style="width: 230px;">
+                                <input type="checkbox" name="checkbox" id="c2"> 인도네시아 만옐링 (100g)</label>
+                            <input type="number" name="numb" id="numb" value="0" style="width: 50px;">개</div>
+                        <div>
+                            <label for="c3" style="width: 230px;">
+                                <input type="checkbox" name="checkbox" id="c3"> 탐나는도다 (블렌딩)(100g)</label>
+                            <input type="number" name="numc" id="numc" value="0" style="width: 50px;">개</div>
+                    </li>
+                </ul>
+            </p>
+
+        </fieldset>
+        <div style="text-align: center">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 작성">
+        </div>
+
+
+    </form>
 </body>
+
 </html>
