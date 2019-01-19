@@ -1,34 +1,100 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>내가 처음 만드는 HTML 문서</title>
     <style>
+        html {}
+
+        body {}
+
+        header {
+            background-color: salmon;
+            height: 70px;
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-bottom: 30px
+        }
+
+        article {
+            border: 1px solid gray;
+            display: inline-block;
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 70px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        #p {
+            list-style: :none;
+            display: flex;
+            align-items: center;
+        }
+
+        .m {
+            display: inline-block;
+            margin-right: 30px;
+        }
     </style>
 </head>
+
 <body>
+
+    <header>
         <h1>입양하기</h1>
-
-        <ul>
-            <li><a href="#">애완견 종류</a></li>
-            <li><a href="#">입양하기</a></li>
-            <li><a href="#">건강돌보기</a></li>
-            <li><a href="#">더불어살기</a></li>
+    </header>
+    <nav>
+        <ul id="p " ;>
+            <li class="m">
+                <a href="# ">
+                    <b>애완견 종류</b>
+                </a>
+            </li>
+            <li class="m">
+                <a href="# ">
+                    <b>입양하기</b>
+                </a>
+            </li>
+            <li class="m">
+                <a href="# "><b>건강돌보기</b></a>
+            </li>
+            <li class="m">
+                <a href="# "><b>더불어살기</b></a>
+            </li>
         </ul>
+        <nav>
 
-            <h2>강아지 용품 준비하기</h2>
-            <ul>
-                <li>강아지 집 </li>
-                <li>강아지 먹이 </li>
-                <li>밥그릇, 물병 </li>
-                <li>이름표, 목줄</li>
-                <li>장난감, 개껌</li>
-                <li>애견용 간식</li>
-                <li>브러쉬, 빗, 털 제거 롤</li>
-                <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
-                <li>샴푸, 린스, 애견용 타올 </li>
-            </ul>
+            <article>
+                <h2>강아지 용품 준비하기</h2>
+                <ul>
+                    <li>강아지 집 </li>
+                    <li>강아지 먹이 </li>
+                    <li>밥그릇, 물병 </li>
+                    <li>이름표, 목줄</li>
+                    <li>장난감, 개껌</li>
+                    <li>애견용 간식</li>
+                    <li>브러쉬, 빗, 털 제거 롤</li>
+                    <li>귀 세정액, 구강스프레이, 기타 영양제 </li>
+                    <li>샴푸, 린스, 애견용 타올 </li>
+                </ul>
+            </article>
 
-        <p>Copyright 2012 funnycom</p>
+            <footer>
+                <p>Copyright 2012 funnycom</p>
+            </footer>
+
+
+
 </body>
+
 </html>

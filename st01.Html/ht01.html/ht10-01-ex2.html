@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title></title>
     <style>
-        *       { border-radius: 10px;          }
-        header  { border: 1px dotted orange;    }
-        article { border: 1px dotted lightblue; }
-        aside   { border: 1px dotted violet;    }
-        footer  { border: 1px dotted pink;      }
+        * {
+            border-radius: 10px;
+        }
+
+        header {
+            border: 1px dotted orange; height: 120px;
+            }
+
+        nav {
+            border: 1px dotted gray;
+            margin: 30px
+        }
+
+        article {
+            border: 1px dotted lightblue;
+        display: inline-block; width:70%; float:left; height:400px;  margin: 30px}
+        aside {
+            border: 1px dotted violet;
+            display: inline-block; width:20%; float:right; height:150px;  margin: 30px}
+
+        footer {
+            border: 1px dotted pink; height: 80px;
+            clear: both; }
     </style>
 </head>
+
 <body>
+    <div style="text-align: center">
+    <header>&lt;header&gt;
+        <nav> &lt;nav&gt; </nav>
+    </header>
+</div>
+    <div style="text-align: center">
+        <article>
+                &lt;article&gt;
+        </article>
+
+        <aside>
+                &lt;aside&gt;
+        </aside>
+    </div>
+    <div style="text-align: center">
+    <footer>&lt;footer&gt;
+    </footer>
+</div>
 </body>
+
 </html>
