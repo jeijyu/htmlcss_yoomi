@@ -3,6 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+<style>
+#main-header{line-height: 50%}
+hgroup .master-title {}
+hgroup .master-description {font-size: 12px}
+#main-navigation {border: 1px solid gainsboro; display: flex; }
+ul.outer-menu {list-style: none; display: flex;}
+.outer-menu > .outer-menu-item{width: 150px;}
+div.search-bar{width: 300px; float:right}
+
+#content {display: flex;}
+#main-section {width: 1000px;}
+#main-aside {width: 300px}
+div.aside-list ul {list-style: none;}
+
+
+</style>
+
 </head>
 <body>
     <div id="page-wrapper">
@@ -44,14 +61,15 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="search-bar">
+                        <form>
+                            <input type="text" class="input-search" />
+                            <input type="submit" class="input-search-submit" value="검색" />
+                        </form>
+                    </div> 
             </div>
             <div class="pull-right">
-                <div class="search-bar">
-                    <form>
-                        <input type="text" class="input-search" />
-                        <input type="submit" class="input-search-submit" value="검색" />
-                    </form>
-                </div>
+              
             </div>
         </nav>
         <div id="content">
@@ -91,6 +109,7 @@
                         <li><a href="#">데이터</a></li>
                     </ul>
                 </div>
+                              
             </aside>
         </div>
         <footer id="main-footer">
@@ -98,7 +117,8 @@
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
